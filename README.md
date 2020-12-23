@@ -7,3 +7,7 @@ data using a JSON server, run the following two commands:
 This will create a server storing all of our lost toy data with restful routes
 at `http://localhost:3000/users`.
 
+To open the App use command in another tab:
+ * `open index.html`.
+
+ 

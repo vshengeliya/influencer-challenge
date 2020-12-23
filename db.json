@@ -2,21 +2,21 @@
     "users": [
       {
         "id": 1,
-        "email": "mike@mail.com",
-        "refCode": "MNJ8U",
-        "emailedReffered": ["vero@mail.com", "andrew@mail.com"]
+        "email": "example1@google.com",
+        "refCode": "AsD456",
+        "emailedReffered": ["example-reffered1@google.com", "example-reffered2@google.com"]
       },
       {
         "id": 2,
-        "email": "john@mail.com",
-        "refCode": "MNJ8U",
-        "emailedReffered": ["veroniak@mail.com", "andrea@mail.com"]
+        "email": "example2@google.com",
+        "refCode": "3LiUkh5",
+        "emailedReffered": ["example-reffered3@google.com", "example-reffered4@google.com", "example-reffered5@google.com"]
       },
       {
         "id": 3,
-        "email": "helen@mail.com",
-        "refCode": "MNJ8U",
-        "emailedReffered": ["veroniak@mail.com"]
+        "email": "example3@google.com",
+        "refCode": "iod9eW",
+        "emailedReffered": ["example-reffered6@google.com"]
       }
     ]
   }

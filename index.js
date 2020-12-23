@@ -29,11 +29,13 @@ function showPanel(){
     
     <h3>
     <form id='count-email'>
-    <label >Get refferal count for a particular User. Enter user email:</label>
+    <label >Get refferal count for a particular User. Enter a user email:</label>
     <input type="text" id="count" name="count">
     <input type="submit" value="Submit">
     </form>
     </h3>
+    <br/>
+    <br/>
     <h3>
     <form id='who-reffered-email'>
     <label for="fname">Who has reffered this email. Enter an email:</label>
@@ -41,6 +43,8 @@ function showPanel(){
     <input type="submit" value="Submit">
     </form>
     </h3>
+    <br/>
+    <br/>
     <h3>
     <form id='all-reffered-email'>
     <label>Who has a particular user reffered. Enter a user email:</label>
@@ -48,7 +52,8 @@ function showPanel(){
     <input type="submit" value="Submit">
     </form>
     </h3>
-    <h3>Who is the biggest influencer: </h3> 
+    <br/>
+    <br/>
     `
 }
 
@@ -68,15 +73,13 @@ function emailCount(){
     
             if (user.email === email){
                 return  formCountEmail.innerHTML =`
-            <h3>
-            <form id='count-email'>
-            <label >Who has a particular user reffered. Enter a user email:</label>
-            <input type="text" id="count" name="count">
-            <input type="submit" value="Submit">
-            <p> Count:${user.emailedReffered.length}</p>
-            </form>
-            </h3>
-            `
+                <form id='count-email'>
+                <label >Get refferal count for a particular User. Enter a user email:</label>
+                <input type="text" id="count" name="count">
+                <input type="submit" value="Submit">
+                Count: ${user.emailedReffered.length}
+                </form>
+                `
             }
             } 
         ))
@@ -99,20 +102,19 @@ function allEmails(){
     
             if (user.email === email){
                 return  formAllEmails.innerHTML =`
-            <h3>
-            <form id='count-email'>
-            <label >Check how many refferals this email has. Enter en email:</label>
-            <input type="text" id="count" name="count">
-            <input type="submit" value="Submit">
-            <p> Refferals: <br/>${user.emailedReffered}</p>
-            </form>
-            </h3>
-            `
+                <form id='count-email'>
+                <label >Check how many refferals this email has. Enter en email:</label>
+                <input type="text" id="count" name="count">
+                <input type="submit" value="Submit">
+                Refferals: ${user.emailedReffered}
+                </form>
+                `
             }
             } 
         ))
     })
 }
+
 allEmails()
 
 function whoReffered(){
@@ -132,14 +134,12 @@ function whoReffered(){
                 for (let user of users){
                     if (user.emailedReffered.includes(email)){
                         return formWhoReferred.innerHTML =`
-                        <h3>
                         <form id='who-reffered-email'>
                         <label for="fname">Who has reffered this email. Enter an email:</label>
                         <input type="text" id="reffered" name="reffered">
                         <input type="submit" value="Submit">
-                        <p> User: <br/>${user.email}</p>
+                        Reffered: ${user.email}
                         </form>
-                        </h3>
                         `
                     }
                 }
