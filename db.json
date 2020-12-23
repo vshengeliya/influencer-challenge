@@ -3,19 +3,19 @@
       {
         "id": 1,
         "email": "example1@google.com",
-        "refCode": "AsD456",
+        "code": "DEF",
         "emailedReffered": ["example-reffered1@google.com", "example-reffered2@google.com"]
       },
       {
         "id": 2,
         "email": "example2@google.com",
-        "refCode": "3LiUkh5",
+        "code": "HELLO",
         "emailedReffered": ["example-reffered3@google.com", "example-reffered4@google.com", "example-reffered5@google.com"]
       },
       {
         "id": 3,
         "email": "example3@google.com",
-        "refCode": "iod9eW",
+        "code": "FRIDAY",
         "emailedReffered": ["example-reffered6@google.com"]
       }
     ]
