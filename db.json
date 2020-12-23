@@ -1,0 +1,22 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "email": "mike@mail.com",
+        "refCode": "MNJ8U",
+        "emailedReffered": ["vero@mail.com", "andrew@mail.com"]
+      },
+      {
+        "id": 2,
+        "email": "john@mail.com",
+        "refCode": "MNJ8U",
+        "emailedReffered": ["veroniak@mail.com", "andrea@mail.com"]
+      },
+      {
+        "id": 3,
+        "email": "helen@mail.com",
+        "refCode": "MNJ8U",
+        "emailedReffered": ["veroniak@mail.com"]
+      }
+    ]
+  }
